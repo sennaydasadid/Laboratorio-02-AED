@@ -1,0 +1,10 @@
+//5. Implementar una función iterativa que imprima los datos de fin a inicio.
+void imprimir_F(){
+    T=F;
+    cout<<"[ ";
+    while(T!=NULL){
+        cout<<T->n<<" ";
+        T=T->ant;
+    }
+    cout<<" ]";
+}
