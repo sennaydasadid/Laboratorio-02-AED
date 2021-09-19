@@ -1,0 +1,25 @@
+//7. Implementar una función que ordene los datos de forma ascendente.
+void ordenar_ascendete()
+{
+
+    nodo_doble *aux1, *aux2;
+    int temp;
+    aux1=h;
+    while(aux1->sig!=NULL)
+    {
+
+        aux2=aux1->sig;
+        while(aux!=NULL)
+        {
+
+            if(aux2->n < aux1->n)
+            {
+                temp=aux->n;
+                aux1->n =aux2->n;
+                aux2->n=temp;
+
+            }
+            aux1=aux1->sig;
+        }
+    }
+}
