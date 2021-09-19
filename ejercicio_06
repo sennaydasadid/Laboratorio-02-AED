@@ -1,0 +1,13 @@
+//6. Implementar una función que cuente el número de elementos pares.
+void contarPares()
+{
+    int cont=0;
+    nodo_doble *pActual;
+    for(pActual=h; pActual!=NULL;pActual=pActual->sig)
+        if((pActual->n)%2==0){
+            cont++;
+        }
+    cout<<cont;
+
+
+}
