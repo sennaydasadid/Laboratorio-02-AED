@@ -1,0 +1,12 @@
+//2. Implementar una función maximo de forma recursiva.
+int LinkedList::max_recursive(class Node* temp,int max){
+    if (temp==NULL){
+        return max;
+    }
+    else{
+        if (temp->data>max){
+            max=temp->data;
+        }
+        return max_recursive(temp->next,max);   
+    }
+}

@@ -1,0 +1,11 @@
+//16. Usando las funciones, Last y Previus implemente una función para imprimir los datas de la lista.
+void LinkedList::printLP(class Node* temp){ 
+    if(temp==NULL){
+        cout<<" "<<endl;
+    }
+    else{
+        cout<<temp->data<<" ";   
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    }
+  return printLP(temp->previous);  
+}

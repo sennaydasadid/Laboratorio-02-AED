@@ -1,0 +1,9 @@
+//11. void Last() que coloca el puntero pActual a al final de la lista.
+Node* LinkedList::Last(){
+    Node *temp=this->head;
+    while (temp->next){
+        temp=temp->next;  
+    }
+    this->pActual=temp;
+    return pActual;
+}

@@ -1,0 +1,9 @@
+//13. void Previus() que mueve el puntero pActual al nodo anterior.
+Node* LinkedList::Previus(){
+    Node *temp=this->head;
+    while (temp->next){
+        temp=temp->next;  
+    }
+    pActual=temp->previous;
+    return pActual;
+}

@@ -1,0 +1,12 @@
+//1. Implementar una función maximo de manera iterativa.
+int LinkedList::max_iterative(){
+    Node *temp=this->head;
+    int aux=0;
+    while (temp){
+        if (temp->data>aux){
+            aux=temp->data;
+        }
+        temp=temp->next;
+    }
+    return aux;
+}
